@@ -1,7 +1,7 @@
 # css-animations
 Animations using only CSS + JS when needed
 
-## CSS Bubbles
+## CSS +  HTML only Bubbles
 An alternative to the Bubbles sample at: https://www.creativebloq.com/inspiration/css-animation-examples <br />
 This one has added support to IE11 and yes, it is responsive too  
 
@@ -23,3 +23,9 @@ $limit: 9;
 
 ### Demo
 See the working sample at: https://accedo-gps.000webhostapp.com/demo/css-bubbles/index.html
+
+## CSS + HTML + SVG Bubbles
+This option uses SVG, the downside with SVG, the CSS properties *transform* are not supported at all in IE11 but you can change them and add them as attributes to the SVG element directly.
+
+### Demo
+See a working demo using these choices at:
