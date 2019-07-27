@@ -77,4 +77,4 @@ See the working sample at: https://accedo-gps.000webhostapp.com/demo/css-bubbles
 This option uses SVG, the downside with SVG, the CSS properties *transform* are not supported at all in IE11 but you can change them and add them as attributes to the SVG element directly.
 
 ### Demo
-See a working demo using these choices at:
+See a working demo using these choices at: https://accedo-gps.000webhostapp.com/demo/css-bubbles/svg-bubbles.html
