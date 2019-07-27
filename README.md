@@ -6,7 +6,7 @@ An alternative to the Bubbles sample at: https://www.creativebloq.com/inspiratio
 This one has added support to IE11 and yes, it is responsive too  
 
 To have the correct spacing calculation, consider to use Sass, something like:
-```
+```Sass
 $width: 500px;
 $limit: 9;
 
