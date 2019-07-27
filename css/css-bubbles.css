@@ -220,7 +220,7 @@ div.bubb-sm-8>div {
 		opacity: 1;		
 	}
 	100%{		
-	    opactiy: 0;
+	    opacity: 0;
 		transform: translateY(-300px);
 	}
 }
