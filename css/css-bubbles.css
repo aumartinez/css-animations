@@ -1,0 +1,238 @@
+/*CSS*/
+@import url('https://fonts.googleapis.com/css?family=Exo+2:900');
+
+body {
+	font-family: 'Exo 2', Arial, sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+#main {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+h2 {
+	color: #fff;
+	font-size: 60px;
+}
+
+.container{
+	background-color: #000;
+	overflow: hidden;
+	position: relative;
+	padding: 100px 0;
+}
+
+.bubbles-container {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	overflow: visible;
+	opacity: 0.75;	
+	width: calc(100% - 100px);
+}
+
+.bubbles-large {
+	transform: translateY(325px);
+	width: 100%;
+	display:block;
+}
+
+.circle-lg{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	animation: wobble 2s infinite;
+}
+
+.circle-sm {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+    animation: wobble 1.5s infinite;	
+}
+
+.bubbles-small {
+	transform: translateY(337px);
+	width: 100%;
+	display:block;
+}
+
+div[class^="bubb-sm"],
+div[class^="bubb-lg"]{
+	position: absolute;
+	width: 100%;
+}
+
+div[class^="bubb-lg"]>div,
+div[class^="bubb-sm"]>div {
+	opacity: 0;
+	animation: up 1.5s infinite;
+	animation-timing-function: ease;
+}
+
+/* Bubbles positioning */
+
+.bubb-lg-2 {
+	transform: translateX(104px); /* IE support */
+	transform: translateX(calc(100% *(1/4) - 21px));
+}
+
+.bubb-lg-3 {
+	transform: translateX(229px); /* IE support */
+	transform: translateX(calc(100% *(2/4) - 21px));
+}
+
+.bubb-lg-4 {
+	transform: translateX(354px); /* IE support */
+	transform: translateX(calc(100% *(3/4) - 21px));
+}
+
+.bubb-lg-5 {
+	transform: translateX(459px); /* IE support */
+	transform: translateX(calc(100% - 41px));
+}
+
+.bubb-sm-1 {
+	border: 1px solid transparent; /* IE support */
+	transform: translateX(0)
+}
+
+.bubb-sm-2 {
+	transform: translateX(45px); /* IE support */
+	transform: translateX(calc(100% *(1/9) - 11px));
+}
+
+.bubb-sm-3 {
+	transform: translateX(101px); /* IE Support */
+	transform: translateX(calc(100% *(2/9) - 11px));
+}
+
+.bubb-sm-4 {
+	transform: translateX(156px); /* IE Support */
+	transform: translateX(calc(100% *(3/9) - 11px));
+}
+
+.bubb-sm-5 {
+	transform: translateX(212px); /* IE Support */
+	transform: translateX(calc(100% *(4/9) - 11px));
+}
+
+.bubb-sm-6 {
+	transform: translateX(267px); /* IE Support */
+	transform: translateX(calc(100% *(5/9) - 11px));
+}
+
+.bubb-sm-7 {
+	transform: translateX(323px); /* IE Support */
+	transform: translateX(calc(100% *(6/9) - 11px));
+}
+
+.bubb-sm-8 {
+	transform: translateX(378px); /* IE Support */
+	transform: translateX(calc(100% *(7/9) - 11px));
+}
+
+.bubb-sm-9 {
+	transform: translateX(434px); /* IE Support */
+	transform: translateX(calc(100% *(8/9) - 11px));
+}
+
+.bubb-sm-10 {
+	transform: translateX(489px); /* IE Support */
+	transform: translateX(calc(100% - 22px));
+}
+
+/*Random delay*/
+
+div.bubb-sm-9 .circle-sm,
+div.bubb-lg-3 .circle-lg,
+div.bubb-sm-10>div,
+div.bubb-lg-1>div {
+	animation-delay: 0.5s;
+}
+
+div.bubb-sm-8 .circle-sm,
+div.bubb-lg-1 .circle-lg,
+div.bubb-sm-1>div,
+div.bubb-lg-2>div {
+	animation-delay: 1.5s;
+}
+
+div.bubb-sm-6 .circle-sm,
+div.bubb-lg-5 .circle-lg,
+div.bubb-sm-7>div,
+div.bubb-lg-3>div {
+	animation-delay: 1s;
+}
+
+div.bubb-sm-4 .circle-sm,
+div.bubb-lg-2 .circle-lg,
+div.bubb-sm-2>div,
+div.bubb-lg-4>div {
+	animation-delay: 0.3s;
+}
+
+div.bubb-sm-2 .circle-sm,
+div.bubb-lg-4 .circle-lg,
+div.bubb-sm-3>div,
+div.bubb-lg-5>div {
+	animation-delay: 2s;
+}
+
+div.bubb-sm-5 .circle-sm,
+div.bubb-sm-9>div,
+div.bubb-sm-4>div {
+	animation-delay: 0.8s;
+}
+
+div.bubb-sm-1 .circle-sm,
+div.bubb-sm-5>div {
+	animation-delay: 1.2s;
+}
+
+div.bubb-sm-3 .circle-sm,
+div.bubb-sm-6>div {
+	animation-delay: 0.2s;
+}
+
+div.bubb-sm-7 .circle-sm,
+div.bubb-sm-8>div {
+	animation-delay: 1.6s;
+}
+
+@keyframes up {
+	0% {
+		opacity: 0;		
+	}
+	25%, 75% {
+		opacity: 1;		
+	}
+	100%{		
+	    opactiy: 0;
+		transform: translateY(-300px);
+	}
+}
+
+@keyframes wobble {
+	0%{		
+		transform: translateX(25px);
+	}
+	50% {
+		transform: translateX(-25px);
+	}
+	100% {
+		transform: translateX(25px);		
+	}
+}
