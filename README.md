@@ -1,4 +1,4 @@
-# css-animations
+# CSS ANIMATIONS
 Animations using only CSS + JS when needed
 
 ## CSS +  HTML only Bubbles
