@@ -5,8 +5,8 @@ Animations using only CSS + JS when needed
 An alternative to the Bubbles sample at: https://www.creativebloq.com/inspiration/css-animation-examples <br />
 This one has added support to IE11 and yes, it is responsive too  
 
-To have the correct spacing calculation, consider to use Sass, something like:
-```Sass
+To have the correct spacing calculation, consider to use Scss, something like:
+```Scss
 $width: 500px;
 $limit: 9;
 
