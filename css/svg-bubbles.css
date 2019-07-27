@@ -1,0 +1,222 @@
+/*CSS*/
+@import url('https://fonts.googleapis.com/css?family=Exo+2:900');
+
+body {
+	font-family: 'Exo 2', Arial, sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+#main {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+h2 {
+	color: #fff;
+	font-size: 60px;
+}
+
+.container{
+	background-color: #000;
+	overflow: hidden;
+	position: relative;
+	padding: 100px 0;
+}
+
+.bubbles-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	overflow: visible;
+	opacity: 0.75;
+	width: calc(100% - 100px);
+}
+
+svg.bubbles {
+	overflow: visible;
+}
+
+.bubbles circle {
+	stroke: #fff;
+	fill: none;	
+}
+
+.bubbles-large {
+	stroke-width: 3px;	
+}
+
+.bubbles-small {
+	stroke-width: 2px;	
+}
+
+.bubb-lg-1 {
+	-ms-transform: translate(10px, 400px);
+	transform: translate(10px, 400px);
+}
+
+.bubb-lg-2 {
+	transform: translate(255px, 400px);
+}
+
+.bubb-lg-3 {
+	transform: translate(525px, 400px);
+}
+
+.bubb-lg-4 {
+	transform: translate(140px, 400px);
+}
+
+.bubb-lg-5 {
+	transform: translate(390px, 400px);	
+}
+
+.bubb-sm-1 {
+  transform: translate(55px, 400px);
+}
+
+.bubb-sm-2 {
+  transform: translate(110px, 400px);
+}
+
+.bubb-sm-3 {
+  transform: translate(165px, 400px);
+}
+
+.bubb-sm-4 {
+  transform: translate(220px, 400px);
+}
+
+.bubb-sm-5 {
+  transform: translate(275px, 400px);
+}
+
+.bubb-sm-6 {
+  transform: translate(330px, 400px);
+}
+
+.bubb-sm-7 {
+  transform: translate(385px, 400px);
+}
+
+.bubb-sm-8 {
+  transform: translate(440px, 400px);
+}
+
+.bubb-sm-9 {
+  transform: translate(495px, 400px);
+}
+
+.bubb-sm-10 {
+  transform: translate(550px, 400px);
+}
+
+g[class^="bubb-lg"]>g {	
+	animation: up 3s infinite;
+	animation-timing-function: linear;
+}
+
+g[class^="bubb-lg"] circle {
+	opacity: 0;
+	animation: wobble 2s infinite;
+	animation-timing-function: ease;
+}
+
+
+g[class^="bubb-sm"]>g {	
+	animation: up 1.5s infinite;
+	animation-timing-function: linear;
+}
+
+g[class^="bubb-sm"] circle {
+	opacity: 0;
+	animation: wobble 1.5s infinite;
+	animation-timing-function: linear;
+}
+
+g.bubb-sm-6>g,
+g.bubb-sm-6>g circle{
+	animation-delay: 0.5s;
+}
+
+g.bubb-sm-8>g,
+g.bubb-sm-8>g circle{
+	animation-delay: 0.6s;
+}
+
+g.bubb-sm-3>g,
+g.bubb-sm-3>g circle,
+g.bubb-lg-2>g,
+g.bubb-lg-2>g circle {
+	animation-delay: 0.7s;
+}
+
+g.bubb-sm-1>g,
+g.bubb-sm-1>g circle,
+g.bubb-lg-1>g,
+g.bubb-lg-1>g circle {
+	animation-delay: 1s;	
+}
+
+g.bubb-sm-5>g,
+g.bubb-sm-5>g circle,
+g.bubb-lg-3>g,
+g.bubb-lg-3>g circle {
+	animation-delay: 1.3s;
+}
+
+g.bubb-sm-4>g,
+g.bubb-sm-4>g circle,
+g.bubb-sm-7>g,
+g.bubb-sm-7>g circle,
+g.bubb-lg-4>g,
+g.bubb-lg-4>g circle {
+	animation-delay: 1.7s;
+}
+
+g.bubb-sm-2>g,
+g.bubb-sm-2>g circle,
+g.bubb-sm-9>g,
+g.bubb-sm-9>g circle,
+g.bubb-lg-5>g,
+g.bubb-lg-5>g circle {
+	animation-delay: 2s;
+}
+
+@keyframes up {
+	0% {
+		opacity: 0;
+		transition: opacity 0.5s linear;
+	}
+	45%, 90% {
+		opacity: 1;		
+	}
+	95% {
+		opacity: 1;		
+	}
+	100%{
+		opacity: 0;
+		transform: translateY(-300px);
+	}
+}
+
+@keyframes wobble {
+	0%{
+		opacity: 1;
+		transform: translateX(50px);
+	}
+	50% {
+		transform: translateX(-50px);
+	}
+	100% {
+		transform: translateX(50px);
+		opacity: 1;
+	}	
+}
