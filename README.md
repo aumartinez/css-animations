@@ -7,4 +7,4 @@ This one has added support to IE11
 
 
 ### Demo
-See the working sample at: 
+See the working sample at: https://accedo-gps.000webhostapp.com/demo/css-bubbles/index.html
