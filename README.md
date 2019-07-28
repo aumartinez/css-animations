@@ -13,8 +13,7 @@ $limit: 9;
 @for $i from 1 to 10 {
   .bubb-sm-#{$i + 1}{
     /*IE Support*/
-    transform: translateX(ceil($width * ($i/$limit) - 11px));
-    
+    transform: translateX(ceil($width * ($i/$limit) - 11px));    
   }
 }
 
