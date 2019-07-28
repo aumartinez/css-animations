@@ -20,56 +20,6 @@ $limit: 9;
 
 ```
 
-The above in a Sass/Scss preprocessor will output the following:
-
-```Css
-.bubb-sm-2 {
-  /*IE Support*/
-  transform: translateX(45px);
-}
-
-.bubb-sm-3 {
-  /*IE Support*/
-  transform: translateX(101px);
-}
-
-.bubb-sm-4 {
-  /*IE Support*/
-  transform: translateX(156px);
-}
-
-.bubb-sm-5 {
-  /*IE Support*/
-  transform: translateX(212px);
-}
-
-.bubb-sm-6 {
-  /*IE Support*/
-  transform: translateX(267px);
-}
-
-.bubb-sm-7 {
-  /*IE Support*/
-  transform: translateX(323px);
-}
-
-.bubb-sm-8 {
-  /*IE Support*/
-  transform: translateX(378px);
-}
-
-.bubb-sm-9 {
-  /*IE Support*/
-  transform: translateX(434px);
-}
-
-.bubb-sm-10 {
-  /*IE Support*/
-  transform: translateX(489px);
-}
-```
-
-
 ### Demo
 See the working sample at: https://accedo-gps.000webhostapp.com/demo/css-bubbles/index.html
 
