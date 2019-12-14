@@ -1,5 +1,5 @@
 # CSS ANIMATIONS
-Animations using only CSS + JS when needed
+Animations using only CSS + JS
 
 ## CSS +  HTML only Bubbles
 An alternative to the Bubbles sample at: https://www.creativebloq.com/inspiration/css-animation-examples <br />
